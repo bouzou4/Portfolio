@@ -8,8 +8,18 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
+  devServer: {
+    contentBase: './',
+    historyApiFallback: true
+  },
+  watch: true,
   module: {
     rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader'
+      },
       {
         test: /\.css$/,
         use: [
@@ -25,6 +35,14 @@ module.exports = {
           'less-loader'
         ]
       },
+      {
+        test: /\.(sass|scss)$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
+      },
       { 
           test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
           loader: "url-loader?limit=10000&mimetype=application/font-woff" },
@@ -37,10 +55,17 @@ module.exports = {
           loader: "file" 
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|svg|jpg|jpeg|gif)$/,
         use: [
-          'file-loader'
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[hash].[ext]',
+              outputPath: 'img/'
+            }
+          }
         ]
+
       }
     ]
   },
