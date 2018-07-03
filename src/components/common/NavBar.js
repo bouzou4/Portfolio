@@ -5,7 +5,7 @@ class NavBar extends React.Component {
 
   render() {
     return (
-      <div className="navbar is-white">
+      <nav className="navbar is-white">
         <div className="navbar-brand">
           <div className="navbar-burger burger" data-target="navMenuColorwhite-example">
             <span></span>
@@ -37,7 +37,7 @@ class NavBar extends React.Component {
             
           </div>
         </div>
-      </div>
+      </nav>
     );
   }
 }

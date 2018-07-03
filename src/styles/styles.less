@@ -42,7 +42,7 @@ a {
   margin-top: 50px;
   text-align: center;
   font-size: 60pt;
-  font-weight: 100;
+  font-weight: 200;
   border: 2px solid #fff;
   letter-spacing: 3px;
   font-family: Roboto Condensed, Helvetica Neue, Helvetica, Arial;
@@ -60,13 +60,14 @@ a {
   background-image: url(../img/adam.jpg);
   background-size: contain;
   margin-bottom: 50px;
+  filter: grayscale();
+  -webkit-filter: grayscale();
 }
 
 .divider-graphic {
   background-image: url(../img/wave-divider.svg);
   height: 100px;
-  width: 50%;
-  max-width: 1080px;
+  width: 90%;
   top: -50px;
   position: relative;
   z-index: 5;
@@ -117,10 +118,29 @@ a {
 
 /* End Skills */
 
+/* Start Projects */
+
+.proj-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100px;
+  margin-bottom: 10px;
+  background-position: center;
+}
+
+/* End Projects */
+
 /* Start Companies */
 
 #companies {
   background-color: #00d1b2;
+}
+
+.comp-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  background-position: center;
 }
 
 /* End Companies */
@@ -129,6 +149,10 @@ a {
 
 footer {
   background-color: #e4e4e4;
+}
+
+.footer-text {
+  margin-top: 15px;
 }
 
 /* End Footer */
