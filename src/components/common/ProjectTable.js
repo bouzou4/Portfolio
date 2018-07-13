@@ -8,34 +8,34 @@ class ProjectTable extends React.Component {
     this.state = {
       projects: [
         {
-          pName: "TEST PROJECT",
-          picture: "fe-graphic.svg",
-          link: "http://www.google.com/",
+          pName: "CO OP Site Redesign",
+          picture: "proj-coop.jpg",
+          link: "http://www.coopbrand.co/",
         },
         {
-          pName: "TEST PROJECT",
-          picture: "fe-graphic.svg",
-          link: "http://www.google.com/",
+          pName: "Edu.Chat iOS App",
+          picture: "comp-educhat.png",
+          link: "https://itunes.apple.com/us/app/edu-chat/id1257780738?mt=8",
         },
         {
-          pName: "TEST PROJECT",
-          picture: "fe-graphic.svg",
-          link: "http://www.google.com/",
+          pName: "Brooklyn Bowl Site Re-Design",
+          picture: "proj-bkbowl.jpg",
+          link: "http://www.brooklynbowl.com/",
         },
         {
-          pName: "TEST PROJECT",
-          picture: "fe-graphic.svg",
-          link: "http://www.google.com/",
+          pName: "Sweet N Low Site Re-Design",
+          picture: "proj-sweetnlow.jpg",
+          link: "http://www.sweetnlow.com/",
         },
         {
-          pName: "TEST PROJECT",
-          picture: "fe-graphic.svg",
-          link: "http://www.google.com/",
+          pName: "Nintendo Chibi-Robo Ziplash Site",
+          picture: "proj-chibi.jpg",
+          link: "http://www.chibirobo-ziplash.com/",
         },
         {
-          pName: "TEST PROJECT",
-          picture: "fe-graphic.svg",
-          link: "http://www.google.com/",
+          pName: "Brooklyn City Tower Site",
+          picture: "proj-citytwr.jpg",
+          link: "http://www.citytowerbk.com/",
         },
       ]
     };
