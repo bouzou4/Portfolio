@@ -2,6 +2,9 @@
 
 #### Start with NPM script
 ###### For Development:
+
+first initialize with node package manager to get node modules
+
 Run the start script to compile website through webpack.
 
 Client bundle available in memory at dist/bundle.js 
