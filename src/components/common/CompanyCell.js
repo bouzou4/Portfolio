@@ -7,7 +7,7 @@ class CompanyCell extends React.Component {
     return (
       <div className="column is-half-mobile is-one-quarter-tablet">
         <figure>
-          <div className="comp-img" style={{backgroundImage: 'url(img/' + this.props.companyPicture + ')'}}></div>
+          <div className="comp-img zoom-bg-out" style={{backgroundImage: 'url(img/' + this.props.companyPicture + ')'}}></div>
         </figure>
       </div>
     );
