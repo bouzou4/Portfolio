@@ -26,8 +26,8 @@ function scrollEffects() {
 //  ==========================================================================	
 function init(){
 	$(document).ready(function(){
-		console.log("hey man");
 		scrollEffects();
+		//prevent FOUC because of webpack
 		$('body').removeClass('display-hide');
 	});
 }
