@@ -28,6 +28,7 @@ function init(){
 	$(document).ready(function(){
 		console.log("hey man");
 		scrollEffects();
+		$('body').css('display', 'inherit');
 	});
 }
 
