@@ -20,6 +20,18 @@ function scrollEffects() {
 	});
 }
 
+//  ==========================================================================
+//  Mobile Nav Code
+//  ==========================================================================	
+function initNav() {
+  var burger = document.querySelector('.burger');
+  var nav = document.querySelector('#'+burger.dataset.target);
+ 
+  burger.addEventListener('click', function(){
+    burger.classList.toggle('is-active');
+    nav.classList.toggle('is-active');
+  });
+}
 
 //  ==========================================================================
 //  Init
@@ -27,6 +39,7 @@ function scrollEffects() {
 function init(){
 	$(document).ready(function(){
 		scrollEffects();
+		initNav();
 		//prevent FOUC because of webpack
 		$('body').removeClass('display-hide');
 	});

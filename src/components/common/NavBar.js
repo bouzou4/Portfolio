@@ -7,14 +7,14 @@ class NavBar extends React.Component {
     return (
       <nav className="navbar is-white">
         <div className="navbar-brand">
-          <div className="navbar-burger burger" data-target="navMenuColorwhite-example">
+          <div className="navbar-burger burger" data-target="navMenu">
             <span></span>
             <span></span>
             <span></span>
           </div>
         </div>
 
-        <div id="navMenuColorwhite-example" className="navbar-menu">
+        <div id="navMenu" className="navbar-menu">
           <div className="navbar-start">
             <a className="navbar-item" href="#nav">
               Home
