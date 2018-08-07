@@ -1,11 +1,13 @@
 var http = require("http"),
   express = require('express'),
   path = require('path'),
+  gzip = require('compression'),
   app = express();
 
 //set the port
 app.set('port', process.env.PORT || 8000);
 
+app.use(gzip());
 app.use(express.static(path.join(__dirname, '/dist')));
 
 setInterval(function() {
