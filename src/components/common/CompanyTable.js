@@ -6,7 +6,7 @@ class CompanyTable extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      companyImages: ['comp-ammirati.svg','comp-codeadvantage.png', 'comp-educhat.png', 'comp-ucs.png'],
+      companyImages: ['comp-ammirati.svg','comp-codeadvantage.png', 'comp-aws.svg', 'comp-ucs.png'],
     };
   }
 
