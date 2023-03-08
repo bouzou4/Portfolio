@@ -2,17 +2,17 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
-module.exports = {
+module.exports = (env, argv) => ({
   entry: "./src/index.js",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
   devServer: {
-    contentBase: "./",
+    static: "./dist",
     historyApiFallback: true,
   },
-  watch: true,
+  watch: argv.mode === "development",
   module: {
     rules: [
       {
@@ -54,11 +54,11 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/,
-        type: 'asset/resource',
+        type: "asset/resource",
         generator: {
-          publicPath: 'img/',
-          outputPath: 'img/',
-        }
+          publicPath: "img/",
+          outputPath: "img/",
+        },
       },
     ],
   },
@@ -76,4 +76,4 @@ module.exports = {
       "window.jQuery": "jquery",
     }),
   ],
-};
+});
