@@ -1,19 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import CompanyCell from './CompanyCell';
+import React from "react";
+import ReactDOM from "react-dom";
+import CompanyCell from "./CompanyCell";
+
+import AmmaratiImg from "../../img/comp-ammirati.svg";
+import CodeAdvantageImg from "../../img/comp-codeadvantage.png";
+import AwsImg from "../../img/comp-aws.svg";
+import UcsImg from "../../img/comp-ucs.png";
 
 class CompanyTable extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      companyImages: ['comp-ammirati.svg','comp-codeadvantage.png', 'comp-aws.svg', 'comp-ucs.png'],
+      companyImages: [AmmaratiImg, CodeAdvantageImg, AwsImg, UcsImg],
     };
   }
 
   render() {
     return (
       <div className="columns is-multiline is-mobile">
-        {this.state.companyImages.map((el, ind) => <CompanyCell companyPicture={el} key={'company ' + (ind+1)} />)}
+        {this.state.companyImages.map((el, ind) => (
+          <CompanyCell companyPicture={el} key={"company " + (ind + 1)} />
+        ))}
       </div>
     );
   }

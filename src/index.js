@@ -4,6 +4,8 @@ import NavBar from "./components/common/NavBar.js";
 import CompanyTable from "./components/common/CompanyTable.js";
 import ProjectTable from "./components/common/ProjectTable.js";
 import SkillsTable from "./components/common/SkillsTable.js";
+import adam from './img/adam.jpg';
+import wave from './img/wave-divider.svg';
 import './js/main.js';
 import 'normalize.css';
 import bulma from 'bulma/bulma.sass';
