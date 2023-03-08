@@ -5,6 +5,10 @@ on:
     branches:
       - master
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -35,7 +39,7 @@ jobs:
           role-to-assume: arn:aws:iam::763757603305:role/GHAPortfolioRole
           aws-region: us-east-1
           role-duration-seconds: 900
-          role-session-name: "-${{ github.run_id }}-${{ github.run_number }}"
+          role-session-name: "${{ github.run_id }}-${{ github.run_number }}"
 
       - name: Upload to S3
         uses: jakejarvis/s3-sync-action@master
